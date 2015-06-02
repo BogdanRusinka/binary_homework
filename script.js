@@ -1,4 +1,4 @@
-//1 - прототипное наследование через функции-конструкторы
+п»ї//1 - РїСЂРѕС‚РѕС‚РёРїРЅРѕРµ РЅР°СЃР»РµРґРѕРІР°РЅРёРµ С‡РµСЂРµР· С„СѓРЅРєС†РёРё-РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂС‹
 function Man(name,age){
 	this.name = name;
 	this.age = age;
@@ -16,7 +16,7 @@ function Student(name, age){
 }
 Student.prototype = new Man;
 
-//2 - наследование через конструкцию Object.create()
+//2 - РЅР°СЃР»РµРґРѕРІР°РЅРёРµ С‡РµСЂРµР· РєРѕРЅСЃС‚СЂСѓРєС†РёСЋ Object.create()
 
 function Man(name,age){
 	this.name = name;
