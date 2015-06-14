@@ -1,0 +1,135 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", helvetica, arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4em;
+    background: #eeeeee;
+    color: #333333;
+}
+
+#tasks {
+    width: 500px;
+    margin: 150px auto 40px auto;
+    padding: 20px;
+    background: white;
+
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+    -o-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
+
+    -moz-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+
+#tasks h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0 10px 0;
+}
+
+#tasks input[type="text"] {
+    width: 488px;
+    font-size: 24px;
+    font-family: inherit;
+    line-height: 1.4em;
+    border: 0;
+    outline: none;
+    padding: 6px;
+    border: 1px solid #999999;
+    margin: 0 auto 0 auto;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+    -o-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
+}
+#check-all {
+    display: block;
+    margin: 20px -20px -20px -20px;
+    overflow: hidden;
+
+    color: #555555;
+    background: #f4fce8;
+    border-top: 1px solid #ededed;
+    padding: 0 20px;
+    line-height: 36px;
+
+    -moz-border-radius: 0 0 5px 5px;
+    -o-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}
+.clear {
+    display: block;
+    float: right;
+    line-height: 20px;
+    text-decoration: none;
+
+    background: rgba(0, 0, 0, 0.1);
+    color: #555555;
+    font-size: 11px;
+    margin-top: 8px;
+    padding: 0 10px 1px;
+
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -o-border-radius: 12px;
+    border-radius: 12px;
+
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+    -o-box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 0 0;
+
+    cursor: pointer;
+}
+
+.clear:hover {
+    background: rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
+    -o-box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 -1px 0 0;
+}
+.items {
+    margin: 20px 0;
+    list-style: none;
+}
+
+.item {
+    padding: 15px 20px 15px 0;
+    position: relative;
+    font-size: 24px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.item span{
+    padding: 10px;
+}
+
+.del {
+    background: rgba(0, 0, 0, 0) url("destroy.png") no-repeat scroll center center;
+    cursor: pointer;
+    display: none;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    top: 16px;
+    width: 20px;
+}
+
+.edit {
+    display: none;
+}
+
+.done span {
+    text-decoration: line-through;
+    color: #d3d3d3 !important;
+}
