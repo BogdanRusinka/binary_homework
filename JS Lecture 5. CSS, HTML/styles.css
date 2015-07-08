@@ -1,0 +1,223 @@
+aside, article, section, header, footer, nav {
+    display: block;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #ccc;
+}
+
+
+body {
+    width: 70%;
+    min-width: 650px;
+    background: #fff;
+    margin: 2em auto 2em;
+    border: 1px solid black;
+}
+
+
+#content{
+    height: 400px;
+}
+
+/*Шапка макета*/
+#pageHeader{
+    height:100px;
+    width: 100%;
+    border:1px solid black;
+}
+
+#pageHeader:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#header-txt{
+  display: inline-block;
+  vertical-align: middle; 
+  padding-left: 15px;
+}
+
+#header-img{
+    width: 100px;
+    height: 100px;
+    float:left;
+}
+
+/* Меню макета */
+aside{
+    margin: 0;
+    height:100%;
+    float:left;
+    border: 1px solid black;   
+}
+aside ul{
+    list-style: none;
+    width: 250px;
+    padding:0;
+    margin:0;
+}
+
+aside li{   
+    display: block;
+    padding: 4px 15px;  
+    background: #0db5b5; 
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+
+
+/* Основная часть */
+
+article{
+    height:400px;
+    background: #e3e8cc; /* Цвет фона */
+    border: solid 1px black; /* Параметры рамки */
+    margin-left: 250px; /* Отступ слева */
+}
+
+/* Первый блок */
+#first{
+    height:250px;
+    border: 1px solid black;
+    overflow: auto;
+    text-align: center;
+}
+.first_block{
+    width:150px;
+    height:100px;
+    border: 1px solid black;
+    display: inline-block;
+
+    margin: 10px;
+}
+
+.first_block:before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.inner{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* Второй блок*/
+#second{
+    height:146px;
+    border: 1px solid black;
+    overflow: auto;
+    text-align: center;    
+}
+.second_block{
+    width:30%;
+    height:100px;
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: middle;  
+    text-align: left;
+    padding-left: 5px;
+}
+
+#second:before, 
+#second:after,
+.second_block:before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+}
+/* Футер макета */
+
+#pageFooter{ }
+
+#col{
+    width: 33.3%;
+    height: 80px;
+    border: 1px solid black;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+    
+}
+
+#col2{
+    width: 100%;
+    height: 80px;
+    border: 1px solid black;
+    text-align: center;
+    clear: both;
+
+}
+
+
+#col:before,
+#col2:before{
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.footer_group{
+    clear: both;
+}
+
+/* Ленточка */
+
+.wrapper {
+  position: relative;
+  z-index: 90;
+}
+
+.ribbon-wrapper {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+
+.ribbon {
+  -webkit-transform: rotate(45deg);
+  -moz-transform:    rotate(45deg);
+  -ms-transform:     rotate(45deg);
+  -o-transform:      rotate(45deg);
+  position: relative;
+  padding: 7px 0;
+  left: -5px;
+  top: 15px;
+  width: 120px;
+  background-color: #BFDC7A;
+
+  color: #6a6340;
+
+}
+
+.ribbon:before, .ribbon:after {
+  content: "";
+  border-top:   3px solid #6e8900;   
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon:before {
+  left: 0;
+}
+.ribbon:after {
+  right: 0;
+}
